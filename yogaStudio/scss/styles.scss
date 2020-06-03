@@ -1,0 +1,79 @@
+@import 'config';
+
+$light-color: rgba(247, 232, 240, 0.25);
+$primary-color:rgba(247, 232, 240, 0);
+$secondary-color: #241E12;
+$accent-color: rgba(217, 136, 124, 0.25);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $light-color;
+    line-height: 1.6;
+    font-family: 'Oswald', sans-serif;
+    color: $secondary-color;
+} 
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.showcase {
+    background: $primary-color;
+    height: 600px;
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        ul {
+            display: flex;
+            list-style-type: none;
+        }
+
+        li {
+            padding: 15px;
+        }
+
+        a {
+            color: $secondary-color;
+        }
+        a:hover {
+            color: $accent-color;
+        }
+    }
+
+    &-content {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+
+        img {
+            width: 50%;
+            border-radius: 50%;
+        }
+
+        h1 {
+            font-size: 50px;
+            line-height: 1.2
+        }
+    }
+}
+
+@import 'utilities';
+@import 'buttons';
+@import 'mobile';
+
+
+
